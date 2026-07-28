@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Circuit — an arcade racer</title>
+<meta name="description" content="A drivable arcade racer where the track curve is the single source of truth: road mesh, collision, checkpoints and the autopilot racing line all derive from one Catmull-Rom loop.">
+<style>
+  :root { color-scheme: dark }
+  html,body { margin:0; height:100%; background:#0d1526; overflow:hidden;
+              font:13px/1.5 ui-monospace,SFMono-Regular,Menlo,monospace; color:#e2e8f0 }
+  canvas { display:block }
+  #hud { position:fixed; left:16px; top:14px; pointer-events:none; text-shadow:0 1px 4px #000 }
+  #tag { position:fixed; right:16px; bottom:12px; opacity:.5; pointer-events:none }
+</style>
+<script src="https://a.hanzo.ai/analytics.js" data-org="hanzo" crossorigin="anonymous" defer></script>
+<script src="https://a.hanzo.ai/chat.js" data-org="hanzo" data-mode="site" crossorigin="anonymous" defer></script>
+</head>
+<body>
+<div id="hud">building the circuit…</div>
+<div id="tag">Circuit · three.js · hanzo.app</div>
+<script type="module" src="./app.js"></script>
+</body>
+</html>
